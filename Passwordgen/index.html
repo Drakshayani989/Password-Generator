@@ -1,0 +1,29 @@
+<html>
+    <head><title>Password Generator</title>
+    <link rel="stylesheet"href="gen.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="fd72bc86-bcf6-4312-8eb2-fa00eada49f0.png">
+    </head>
+    <body>
+        <div class="div1">
+        <img src="fd72bc86-bcf6-4312-8eb2-fa00eada49f0.png" class="logo">
+        <h1 class="title">Password Generator</h1>
+        <p class="pa">Generate Strong,secure passwords instantly</p>
+        <div class="icon">
+        <input type="text" id="pbox"><i class="fa fa-copy"></i></div>
+        <p class="pa1">Password Strength<span id="str"></span></p>
+        <div id="passstr"></div>
+        <p class="pa2">Password Length<span id="le"></span></p>
+        <input type="range" id="slider" min="0" max="12" >
+        <p class="pa3">Include Characters:</p>
+        <div class="cbox">
+        <input type="checkbox" class="check" id="uppercase">Uppercase Letters (A-Z)<br>
+        <input type="checkbox" class="check" id="lowercase">Lowercase Letters (a-z)<br>
+        <input type="checkbox" class="check" id="num">Numbers (0-9)<br>
+        <input type="checkbox" class="check" id="spchar">Special Characters (!@#$%^&*)<br>
+        </div>
+        <input type="submit" value="Generate Password" class="btn">
+         <script src="gen.js"></script></div>
+    </body>
+</html>
