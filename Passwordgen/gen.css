@@ -1,60 +1,68 @@
-body{
-    display:flex;
-    justify-content: center;;
-    align-items:center;
-
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
 }
-.div1{
-    height:800px;
-    width:500px;
+
+.div1 {
+    width: 90%;
+    max-width: 500px;
     background-color: #f0f0f0;
-    text-align:center;
-    border-radius:10px;
+    text-align: center;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin-top:200px;
+    margin: 100px auto;
+    padding: 20px;
 }
-.logo{
-    height:200px;
-    width:200px;
-    border-radius:150px;
-    margin-top:30px;
-    margin-bottom:10px;
+
+.logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
-.title{
-    font-family: 'Arial', sans-serif;
+
+.title {
     color: #0e0101;
     margin-bottom: 20px;
+    font-size: 24px;
 }
-.pa{
-    font-family: 'Arial', sans-serif;
+
+.pa {
     color: #0e0101;
     margin-bottom: 20px;
-    font-size: 18px;}
+    font-size: 18px;
+}
 
-
-#pbox{
-    width: 350px;
+#pbox {
+    width: 90%;
+    max-width: 400px;
     height: 50px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    padding: 10px;
     font-size: 16px;
-    margin-bottom: 20px;
     background-color: #fff;
     color: #333;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: border-color 0.3s ease;
-    margin-top: 20px;
-    padding:12px 40px 12px 12px;
+    padding: 12px 40px 12px 12px;
+    margin: 20px auto;
 }
+
 #pbox:hover {
     border-color: #007bff;
-    translate: 0.1s;
     outline: none;
 }
-.icon{
+
+.icon {
     position: relative;
-    width: 100%;
+    width: 90%;
     max-width: 400px;
     margin: auto;
 }
@@ -62,87 +70,83 @@ body{
 .icon i {
     position: absolute;
     top: 50%;
-    right:30px; 
+    right: 20px;
     transform: translateY(-50%);
-    color:#6200ff;
+    color: #6200ff;
     font-size: 20px;
     cursor: pointer;
 }
-i:hover{
+
+i:hover {
     color: #0056b3;
     transition: color 0.3s ease;
-    transform: translateY(-50%)scale(1.1);
+    transform: translateY(-50%) scale(1.1);
 }
-#str{
-    margin-left:250px;
+
+#str {
+    text-align: right;
+    margin: 10px 15px;
 }
-#passstr{
-    width: 450px;
-    height: 0.01em;
+
+#passstr {
+    width: 90%;
+    max-width: 400px;
+    height: 10px;
     border-radius: 10px;
-    /* border: 1px solid #ccc; */
-    margin-left:15px;
-    padding:5px;
-    /* margin-bottom: 20px; */
+    margin: 10px auto;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-.pa1,.pa2,.pa3{
+
+.pa1, .pa2, .pa3 {
     text-align: left;
     padding: 0px 20px;
-    font-family: 'Arial', sans-serif;
     color: #0e0101;
-    margin-bottom:15px;
+    margin-bottom: 15px;
     font-size: 18px;
-
 }
-/* .slider{
-    height:10px;
-    width:350px;
-} */
-#le{
+
+#le {
     margin-left: 25px;
     font-size: 18px;
 }
+
 input[type="range"] {
     appearance: none;
-    width: 450px;
+    width: 90%;
+    max-width: 400px;
     height: 10px;
     background: #ddd;
     border-radius: 5px;
     outline: none;
     opacity: 0.7;
-    transition: opacity .2s;
+    transition: opacity 0.2s;
 }
-.cbox{
-    margin: 10px;
-    font-size:20px;
-    font-family: 'Arial', sans-serif;
-    height: 20px;
-    cursor: pointer;
-}
-.cbox{
-    margin: 10px;
+
+.cbox {
+    margin: 10px 0 40px 15px;
     font-size: 18px;
     font-family: 'Arial', sans-serif;
     height: 20px;
     cursor: pointer;
     text-align: left;
-    margin-bottom:40px;
-    margin-left:15px;
 }
+
 input[type="checkbox"] {
-  transform: scale(1.5); /* or 2 for double size */
-  margin-right: 10px; /* spacing with label */
+    transform: scale(1.5);
+    margin-right: 10px;
 }
+
 input[type="checkbox"]:checked {
-    accent-color: #6200ff; /* Change the color of the checkbox when checked */
+    accent-color: #6200ff;
 }
-.btn{
-    width: 200px;
+
+.btn {
+    width: 80%;
+    max-width: 200px;
     height: 50px;
-    margin-top:50px;
-    background: linear-gradient(to right,#6200ff,#502a8b);
+    margin-top: 30px;
+    background: linear-gradient(to right, #6200ff, #502a8b);
     color: white;
     border: none;
     border-radius: 5px;
@@ -150,7 +154,29 @@ input[type="checkbox"]:checked {
     font-size: 18px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 .btn:hover {
     background-color: #502a8b;
     transform: scale(1.05);
+}
+
+/* ✅ Responsive Fonts & Layouts for Small Screens */
+@media (max-width: 600px) {
+    .title, .pa, .pa1, .pa2, .pa3 {
+        font-size: 16px;
+    }
+
+    .logo {
+        height: 120px;
+        width: 120px;
+    }
+
+    .btn {
+        font-size: 16px;
+        height: 45px;
+    }
+
+    input[type="range"] {
+        height: 8px;
+    }
 }
