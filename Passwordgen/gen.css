@@ -62,7 +62,7 @@ body{
 .icon i {
     position: absolute;
     top: 50%;
-    right:30px; /* or 5% based on your layout */
+    right:30px; 
     transform: translateY(-50%);
     color:#6200ff;
     font-size: 20px;
