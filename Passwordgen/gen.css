@@ -146,7 +146,7 @@ input[type="checkbox"]:checked {
     width: 80%;
     max-width: 200px;
     height: 50px;
-    margin-top: 30px;
+    margin-top: 50px;
     background: linear-gradient(to right, #6200ff, #502a8b);
     color: white;
     border: none;
