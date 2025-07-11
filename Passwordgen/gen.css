@@ -133,7 +133,9 @@ input[type="range"] {
     cursor: pointer;
     text-align: left;
 }
-
+.check{
+    margin-bottom:10px;
+}
 input[type="checkbox"] {
     transform: scale(1.5);
     margin-right: 10px;
